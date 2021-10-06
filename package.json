@@ -1,0 +1,22 @@
+{
+  "name": "dood",
+  "version": "1.0.0",
+  "description": "twitter updates",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "esbuild --bundle src/index.js --outfile=build/bundle.js",
+    "start": "npm run build -- --servedir=build",
+    "watch": "npm run build -- --watch"
+  },
+  "keywords": [],
+  "author": "Marcus André",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.13.4",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0"
+  }
+}
